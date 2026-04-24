@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/user/catkin_ws/build/_deps/ceres-subbuild/CMakeFiles/ceres-populate"
+		},
+		{
+			"file" : "/home/user/catkin_ws/build/_deps/ceres-subbuild/CMakeFiles/ceres-populate.rule"
+		},
+		{
+			"file" : "/home/user/catkin_ws/build/_deps/ceres-subbuild/CMakeFiles/ceres-populate-complete.rule"
+		},
+		{
+			"file" : "/home/user/catkin_ws/build/_deps/ceres-subbuild/ceres-populate-prefix/src/ceres-populate-stamp/ceres-populate-install.rule"
+		},
+		{
+			"file" : "/home/user/catkin_ws/build/_deps/ceres-subbuild/ceres-populate-prefix/src/ceres-populate-stamp/ceres-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/user/catkin_ws/build/_deps/ceres-subbuild/ceres-populate-prefix/src/ceres-populate-stamp/ceres-populate-download.rule"
+		},
+		{
+			"file" : "/home/user/catkin_ws/build/_deps/ceres-subbuild/ceres-populate-prefix/src/ceres-populate-stamp/ceres-populate-patch.rule"
+		},
+		{
+			"file" : "/home/user/catkin_ws/build/_deps/ceres-subbuild/ceres-populate-prefix/src/ceres-populate-stamp/ceres-populate-configure.rule"
+		},
+		{
+			"file" : "/home/user/catkin_ws/build/_deps/ceres-subbuild/ceres-populate-prefix/src/ceres-populate-stamp/ceres-populate-build.rule"
+		},
+		{
+			"file" : "/home/user/catkin_ws/build/_deps/ceres-subbuild/ceres-populate-prefix/src/ceres-populate-stamp/ceres-populate-test.rule"
+		},
+		{
+			"file" : "/home/user/catkin_ws/build/_deps/ceres-subbuild/ceres-populate-prefix/src/ceres-populate-stamp/ceres-populate-skip-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ceres-populate"
+		],
+		"name" : "ceres-populate"
+	}
+}

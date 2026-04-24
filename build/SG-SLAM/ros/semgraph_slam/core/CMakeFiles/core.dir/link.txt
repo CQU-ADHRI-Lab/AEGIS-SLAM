@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/user/catkin_ws/devel/lib/libcore.a  CMakeFiles/core.dir/CommonUtils.cpp.o
+/usr/bin/ranlib /home/user/catkin_ws/devel/lib/libcore.a

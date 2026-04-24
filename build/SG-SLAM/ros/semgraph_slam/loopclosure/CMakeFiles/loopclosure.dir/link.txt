@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/user/catkin_ws/devel/lib/libloopclosure.a  CMakeFiles/loopclosure.dir/LoopClosure.cpp.o CMakeFiles/loopclosure.dir/Hungarian.cpp.o CMakeFiles/loopclosure.dir/FastIcp.cpp.o CMakeFiles/loopclosure.dir/PlaneIcp.cpp.o
+/usr/bin/ranlib /home/user/catkin_ws/devel/lib/libloopclosure.a

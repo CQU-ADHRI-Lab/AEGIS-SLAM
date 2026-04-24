@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/user/catkin_ws/devel/lib/libfrontend.a  CMakeFiles/frontend.dir/Registration.cpp.o CMakeFiles/frontend.dir/Deskew.cpp.o CMakeFiles/frontend.dir/VoxelHashMap.cpp.o CMakeFiles/frontend.dir/Preprocessing.cpp.o CMakeFiles/frontend.dir/Threshold.cpp.o CMakeFiles/frontend.dir/SemanticCluster.cpp.o CMakeFiles/frontend.dir/SemGraph.cpp.o CMakeFiles/frontend.dir/GraphMap.cpp.o
+/usr/bin/ranlib /home/user/catkin_ws/devel/lib/libfrontend.a

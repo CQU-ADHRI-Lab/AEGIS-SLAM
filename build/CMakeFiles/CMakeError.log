@@ -1,0 +1,258 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/user/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_36936/fast && /usr/bin/make -f CMakeFiles/cmTC_36936.dir/build.make CMakeFiles/cmTC_36936.dir/build
+make[1]: Entering directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_36936.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_36936.dir/src.c.o   -c /home/user/catkin_ws/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_36936
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36936.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_36936.dir/src.c.o  -o cmTC_36936 
+/usr/bin/ld: CMakeFiles/cmTC_36936.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_36936.dir/build.make:87: cmTC_36936] Error 1
+make[1]: Leaving directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_36936/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/user/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d6a53/fast && /usr/bin/make -f CMakeFiles/cmTC_d6a53.dir/build.make CMakeFiles/cmTC_d6a53.dir/build
+make[1]: Entering directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d6a53.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d6a53.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d6a53
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6a53.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_d6a53.dir/CheckFunctionExists.c.o  -o cmTC_d6a53  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_d6a53.dir/build.make:87: cmTC_d6a53] Error 1
+make[1]: Leaving directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d6a53/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wshorten64to32 failed with the following output:
+Change Dir: /home/user/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fd9dd/fast && /usr/bin/make -f CMakeFiles/cmTC_fd9dd.dir/build.make CMakeFiles/cmTC_fd9dd.dir/build
+make[1]: Entering directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fd9dd.dir/src.cxx.o
+/usr/bin/c++    -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -DCOMPILER_SUPPORT_Wshorten64to32 -Werror -fPIE   -Wshorten-64-to-32 -std=gnu++17 -o CMakeFiles/cmTC_fd9dd.dir/src.cxx.o -c /home/user/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wshorten-64-to-32'
+make[1]: *** [CMakeFiles/cmTC_fd9dd.dir/build.make:66: CMakeFiles/cmTC_fd9dd.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_fd9dd/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wenumconversion failed with the following output:
+Change Dir: /home/user/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7685f/fast && /usr/bin/make -f CMakeFiles/cmTC_7685f.dir/build.make CMakeFiles/cmTC_7685f.dir/build
+make[1]: Entering directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7685f.dir/src.cxx.o
+/usr/bin/c++    -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wenumconversion -Werror -fPIE   -Wenum-conversion -std=gnu++17 -o CMakeFiles/cmTC_7685f.dir/src.cxx.o -c /home/user/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wenum-conversion'; did you mean '-Wno-conversion'?
+make[1]: *** [CMakeFiles/cmTC_7685f.dir/build.make:66: CMakeFiles/cmTC_7685f.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7685f/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcpp11extensions failed with the following output:
+Change Dir: /home/user/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cd76e/fast && /usr/bin/make -f CMakeFiles/cmTC_cd76e.dir/build.make CMakeFiles/cmTC_cd76e.dir/build
+make[1]: Entering directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cd76e.dir/src.cxx.o
+/usr/bin/c++    -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wcpp11extensions -Werror -fPIE   -Wc++11-extensions -std=gnu++17 -o CMakeFiles/cmTC_cd76e.dir/src.cxx.o -c /home/user/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wc++11-extensions'; did you mean '-fms-extensions'?
+make[1]: *** [CMakeFiles/cmTC_cd76e.dir/build.make:66: CMakeFiles/cmTC_cd76e.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_cd76e/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd981 failed with the following output:
+Change Dir: /home/user/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3a902/fast && /usr/bin/make -f CMakeFiles/cmTC_3a902.dir/build.make CMakeFiles/cmTC_3a902.dir/build
+make[1]: Entering directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3a902.dir/src.cxx.o
+/usr/bin/c++    -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd981 -Werror -fPIE   -wd981 -std=gnu++17 -o CMakeFiles/cmTC_3a902.dir/src.cxx.o -c /home/user/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-wd981'
+make[1]: *** [CMakeFiles/cmTC_3a902.dir/build.make:66: CMakeFiles/cmTC_3a902.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3a902/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd2304 failed with the following output:
+Change Dir: /home/user/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_480ce/fast && /usr/bin/make -f CMakeFiles/cmTC_480ce.dir/build.make CMakeFiles/cmTC_480ce.dir/build
+make[1]: Entering directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_480ce.dir/src.cxx.o
+/usr/bin/c++    -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd2304 -Werror -fPIE   -wd2304 -std=gnu++17 -o CMakeFiles/cmTC_480ce.dir/src.cxx.o -c /home/user/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-wd2304'
+make[1]: *** [CMakeFiles/cmTC_480ce.dir/build.make:66: CMakeFiles/cmTC_480ce.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_480ce/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -v 
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -fpp 
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -v 
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -fpp 
+
+The output was:
+No such file or directory
+
+
+Performing C++ SOURCE FILE Test HAVE_BIGOBJ failed with the following output:
+Change Dir: /home/user/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_59911/fast && /usr/bin/make -f CMakeFiles/cmTC_59911.dir/build.make CMakeFiles/cmTC_59911.dir/build
+make[1]: Entering directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_59911.dir/src.cxx.o
+/usr/bin/c++    -DHAVE_BIGOBJ -fPIE   /bigobj -std=gnu++17 -o CMakeFiles/cmTC_59911.dir/src.cxx.o -c /home/user/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: /bigobj: No such file or directory
+make[1]: *** [CMakeFiles/cmTC_59911.dir/build.make:66: CMakeFiles/cmTC_59911.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_59911/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /home/user/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7d432/fast && /usr/bin/make -f CMakeFiles/cmTC_7d432.dir/build.make CMakeFiles/cmTC_7d432.dir/build
+make[1]: Entering directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7d432.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -fPIE   -o CMakeFiles/cmTC_7d432.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7d432
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d432.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_    CMakeFiles/cmTC_7d432.dir/CheckFunctionExists.c.o  -o cmTC_7d432 
+/usr/bin/ld: CMakeFiles/cmTC_7d432.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_7d432.dir/build.make:87: cmTC_7d432] Error 1
+make[1]: Leaving directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7d432/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/user/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3bc32/fast && /usr/bin/make -f CMakeFiles/cmTC_3bc32.dir/build.make CMakeFiles/cmTC_3bc32.dir/build
+make[1]: Entering directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3bc32.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -fPIE   -o CMakeFiles/cmTC_3bc32.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3bc32
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3bc32.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_    CMakeFiles/cmTC_3bc32.dir/CheckFunctionExists.c.o  -o cmTC_3bc32  /usr/lib/x86_64-linux-gnu/libblas.so 
+/usr/bin/ld: CMakeFiles/cmTC_3bc32.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `cheev_'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_3bc32.dir/build.make:88: cmTC_3bc32] Error 1
+make[1]: Leaving directory '/home/user/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3bc32/fast] Error 2
+
+
+

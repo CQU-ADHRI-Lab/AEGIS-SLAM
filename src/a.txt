@@ -1,0 +1,148 @@
+evo_ape tum /home/zjc/result/m2dgr/street_03/street_03.txt /home/zjc/result/m2dgr/street_03/placelio.txt -a 
+
+evo_ape kitti /home/zjc/dataset/mulran_in_kitti/sequences/00/00.txt /home/zjc/catkin_ws/src/SG-SLAM/ros/save/mulran_slam_poses_00.txt -a 
+
+evo_traj kitti /home/zjc/dataset/mulran_in_kitti/sequences/00/00.txt --ref=/home/zjc/catkin_ws/src/SG-SLAM/ros/save/mulran_slam_poses_00.txt -p -a
+
+
+python mulran2kitti.py /home/zjc/dataset/mulran/kaist02/global_pose.csv /home/zjc/dataset/mulran/kaist02/sensor_data/data_stamp.csv /home/zjc/dataset/mulran/kaist02/gt.txt
+
+./run_kiss_matcher data/vbr.pcd data/vbr1.pcd 2.0
+pcl_viewer vbr_warped.pcd
+./run_kiss_matcher data/kitti00.pcd data/kitti07.pcd 2.0
+pcl_viewer kitti00_warped.pcd
+./run_kiss_matcher data/global.pcd data/global1.pcd 2.0
+
+
+
+kiss-icp
+roslaunch kiss_icp odometry.launch topic:=/velodyne_points
+
+
+dlio
+roslaunch direct_lidar_inertial_odometry dlio.launch \
+  rviz:=true \
+  pointcloud_topic:=/velodyne_points \
+  imu_topic:=/handsfree/imu
+  
+legoloam  
+rosbag play door_01.bag --clock --topic /velodyne_points /handsfree/imu
+
+
+
+清除日志
+sudo journalctl --vacuum-time=3d 
+sudo journalctl --vacuum-size=200M
+
+ZX
+
+
+
+
+参考文献
+
+
+Gmapping
+Cartographer
+LOAM
+LEGO-LOAM
+
+
+LIOSAM 
+FASTLIO
+FAST-LIO2
+
+
+SUMA++
+LIOSEGMOT
+ERASOR
+RF-LIO
+Remove, then Revert
+
+
+log-lio
+place-lio
+light-loam
+
+python traj_eval.py --gt_file /home/zjc/dataset/kitti/sequences/08/08.txt --pred_file /home/zjc/catkin_ws/src/SG-SLAM/ros/save/kitti_slam_08.txt --calib_file /home/zjc/dataset/kitti/sequences/08/calib.txt
+
+python traj_eval.py --gt_file /home/zhoujiacong/catkin_ws/01/01.txt --pred_file /home/zhoujiacong/catkin_ws/src/SG-SLAM/ros/save/kitti_slam_01.txt --calib_file /home/zhoujiacong/catkin_ws/01/calib.txt
+
+python traj_eval.py --gt_file /data/00/kaist01.txt --pred_file /home/user/catkin_ws/src/SG-SLAM/ros/save/mulran_slam_poses_00.txt 
+
+sudo apt-get install ros-noetic-tf-transformations
+
+Average Translation Error       (%): 0.38948002579885166
+Average Rotational Error (deg/100m): 0.21105555695446332
+Absoulte Trajectory Error       (m): 0.9135002037402793
+Absoulte Rotation Error       (deg): 0.5984923639844356
+
+export http_proxy="http://180.85.206.208:7890"
+export https_proxy="http://180.85.206.208:7890"
+
+180.85.206.208
+
+
+scp server-180:~/catkin_ws/1564718964199537916_colored.ply .
+
+
+一、 核心创新点 (Innovations)
+1. 语义-拓扑一致性适配器 (ST-Adaptor)
+这是最核心的模块。传统的 Light-LOAM 对所有几何点一视同仁，而你的代码引入了语义筛选。
+
+创新点： 只有离散的、形状固定的物体（如树干、柱子、车辆）才被允许作为拓扑图的“锚点（Anchors）”。
+
+解决的问题： 解决了“滑动点悖论”。墙面和地面上的最近邻点往往不是物理上的同一个点（有滑动误差），用它们做图匹配会导致计算错误。代码通过 IsDiscreteObject 强制排除了地面和墙面，只在稳定的物体间构建拓扑约束。
+
+2. 双向仲裁机制 (Bi-directional Arbitration)
+这是对语义权重机制的重大改进。
+
+创新点： 权重不再是静态的语义先验（查表），也不是单纯的几何一致性，而是两者的软耦合。
+
+公式逻辑： Final_Weight = Robust_Kernel * (Alpha * Sem_Prior + (1-Alpha) * Geo_Rigidity)。
+
+效果：
+
+“救赎”机制： 如果一棵树被误识别为“植被”（通常权重低），但它在几何上非常稳定（Rigidity 高），它的权重会被动态拉高。
+
+“惩罚”机制： 如果一辆车被识别为“静态车辆”（权重高），但它正在移动（Rigidity 低），它的权重会被动态拉低。
+
+3. 分层与豁免策略 (Stratification & Exemption)
+代码并没有对所有点都应用图约束，而是采取了分而治之的策略。
+
+创新点：
+
+对于离散物体： 启用图匹配约束，计算刚性得分。
+
+对于连续表面（地/墙）： 豁免图匹配计算（返回 -1.0），直接回退到纯语义权重。
+
+意义： 避免了在几何退化区域（如长走廊的墙）强行计算拓扑一致性带来的噪声，保留了 ICP 对平面的滑动约束能力，同时在关键物体上施加了强约束。
+
+4. 预热机制 (Warm-up Mechanism)
+创新点： 在 ICP 的前几轮迭代（WARMUP_ITERATIONS = 5）禁用图匹配。
+
+解决的问题： 图匹配依赖于初值。如果初值偏差大，拓扑关系全乱，计算出的一致性得分全是错的。预热机制让点云先靠几何 ICP 大致对齐，然后再开启图匹配进行“精修”和“锁定”。
+
+
+
+1.56100045277825E+018	-0.4592868122	-0.8881040438	0.01807848396	353050.9833	0.8882839705	-0.4592511133	0.006324772798	4026061.029	0.002685507588	0.01896371225	0.999816566	19.32498018
+
+1.56100044429073E+018	ouster
+1.56100044432149E+018	sick_middle
+1.56100044432525E+018	sick_back
+1.56100044433215E+018	sick_middle
+1.56100044433612E+018	sick_back
+1.5610004443375E+018	fog
+1.56100044433816E+018	encoder
+1.5610004443385E+018	fog
+1.56100044433949E+018	fog
+1.56100044434048E+018	fog
+1.56100044434149E+018	fog
+1.56100044434249E+018	fog
+1.56100044434297E+018	sick_middle
+1.56100044434349E+018	fog
+1.56100044434449E+018	fog
+1.56100044434454E+018	imu
+
+
+

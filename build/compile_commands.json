@@ -1,0 +1,892 @@
+[
+{
+  "directory": "/home/user/catkin_ws/build/SG-SLAM/ros",
+  "command": "/usr/bin/c++  -DGFLAGS_IS_A_DLL=0 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"semgraph_slam\\\" -DSOPHUS_USE_BASIC_LOGGING=1 -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -I/usr/include/vtk-7.1 -I/usr/include/freetype2 -I/home/user/catkin_ws/src/SG-SLAM/ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/pcl-1.10 -I/usr/include/ni -I/usr/include/openni2 -I/home/user/catkin_ws/src/SG-SLAM/cpp -I/home/user/catkin_ws/build/_deps/tessil-src/include -I/home/user/catkin_ws/build/_deps/sophus-src -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /usr/include/eigen3 -isystem /home/user/catkin_ws/build/_deps/eigen-src -isystem /usr/include/gtsam/3rdparty/metis -isystem /usr/include/gtsam/3rdparty/SuiteSparse_config -isystem /usr/include/gtsam/3rdparty/CCOLAMD    -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/semSLAM.dir/ros1/semSLAM.cpp.o -c /home/user/catkin_ws/src/SG-SLAM/ros/ros1/semSLAM.cpp",
+  "file": "/home/user/catkin_ws/src/SG-SLAM/ros/ros1/semSLAM.cpp"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_STATIC_DEFINE -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/home/user/catkin_ws/build/_deps/eigen-src -isystem /usr/include/suitesparse    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_static.dir/c_api.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/c_api.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/c_api.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_STATIC_DEFINE -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/home/user/catkin_ws/build/_deps/eigen-src -isystem /usr/include/suitesparse    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_static.dir/gradient_checker.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/gradient_checker.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/gradient_checker.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_STATIC_DEFINE -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/home/user/catkin_ws/build/_deps/eigen-src -isystem /usr/include/suitesparse    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_static.dir/gradient_problem.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/gradient_problem.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/gradient_problem.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_STATIC_DEFINE -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/home/user/catkin_ws/build/_deps/eigen-src -isystem /usr/include/suitesparse    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_static.dir/local_parameterization.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/local_parameterization.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/local_parameterization.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_STATIC_DEFINE -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/home/user/catkin_ws/build/_deps/eigen-src -isystem /usr/include/suitesparse    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_static.dir/loss_function.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/loss_function.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/loss_function.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_STATIC_DEFINE -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/home/user/catkin_ws/build/_deps/eigen-src -isystem /usr/include/suitesparse    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_static.dir/manifold.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/manifold.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/manifold.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_STATIC_DEFINE -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/home/user/catkin_ws/build/_deps/eigen-src -isystem /usr/include/suitesparse    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_static.dir/normal_prior.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/normal_prior.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/normal_prior.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_STATIC_DEFINE -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/home/user/catkin_ws/build/_deps/eigen-src -isystem /usr/include/suitesparse    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_static.dir/problem.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/problem.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/problem.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_STATIC_DEFINE -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/home/user/catkin_ws/build/_deps/eigen-src -isystem /usr/include/suitesparse    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_static.dir/solver.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/solver.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/solver.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_STATIC_DEFINE -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/home/user/catkin_ws/build/_deps/eigen-src -isystem /usr/include/suitesparse    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_static.dir/types.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/types.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/types.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /usr/include/suitesparse -isystem /home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres.dir/c_api.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/c_api.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/c_api.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /usr/include/suitesparse -isystem /home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres.dir/gradient_checker.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/gradient_checker.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/gradient_checker.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /usr/include/suitesparse -isystem /home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres.dir/gradient_problem.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/gradient_problem.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/gradient_problem.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /usr/include/suitesparse -isystem /home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres.dir/local_parameterization.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/local_parameterization.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/local_parameterization.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /usr/include/suitesparse -isystem /home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres.dir/loss_function.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/loss_function.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/loss_function.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /usr/include/suitesparse -isystem /home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres.dir/manifold.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/manifold.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/manifold.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /usr/include/suitesparse -isystem /home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres.dir/normal_prior.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/normal_prior.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/normal_prior.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /usr/include/suitesparse -isystem /home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres.dir/problem.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/problem.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/problem.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /usr/include/suitesparse -isystem /home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres.dir/solver.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/solver.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/solver.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /usr/include/suitesparse -isystem /home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres.dir/types.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/types.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/types.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_2_2_2.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_2_2.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_2_2.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_2_2_3.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_2_3.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_2_3.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_2_2_4.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_2_4.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_2_4.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_2_2_d.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_2_d.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_2_d.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_2_3_3.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_3_3.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_3_3.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_2_3_4.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_3_4.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_3_4.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_2_3_6.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_3_6.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_3_6.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_2_3_9.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_3_9.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_3_9.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_2_3_d.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_3_d.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_3_d.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_2_4_3.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_4_3.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_4_3.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_2_4_4.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_4_4.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_4_4.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_2_4_6.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_4_6.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_4_6.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_2_4_8.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_4_8.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_4_8.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_2_4_9.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_4_9.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_4_9.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_2_4_d.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_4_d.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_4_d.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_2_d_d.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_d_d.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_2_d_d.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_3_3_3.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_3_3_3.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_3_3_3.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_4_4_2.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_4_4_2.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_4_4_2.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_4_4_3.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_4_4_3.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_4_4_3.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_4_4_4.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_4_4_4.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_4_4_4.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_4_4_d.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_4_4_d.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_4_4_d.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/partitioned_matrix_view_d_d_d.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_d_d_d.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/partitioned_matrix_view_d_d_d.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_2_2_2.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_2_2.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_2_2.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_2_2_3.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_2_3.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_2_3.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_2_2_4.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_2_4.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_2_4.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_2_2_d.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_2_d.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_2_d.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_2_3_3.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_3_3.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_3_3.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_2_3_4.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_3_4.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_3_4.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_2_3_6.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_3_6.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_3_6.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_2_3_9.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_3_9.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_3_9.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_2_3_d.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_3_d.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_3_d.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_2_4_3.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_4_3.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_4_3.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_2_4_4.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_4_4.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_4_4.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_2_4_6.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_4_6.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_4_6.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_2_4_8.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_4_8.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_4_8.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_2_4_9.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_4_9.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_4_9.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_2_4_d.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_4_d.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_4_d.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_2_d_d.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_d_d.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_2_d_d.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_3_3_3.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_3_3_3.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_3_3_3.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_4_4_2.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_4_4_2.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_4_4_2.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_4_4_3.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_4_4_3.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_4_4_3.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_4_4_4.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_4_4_4.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_4_4_4.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_4_4_d.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_4_4_d.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_4_4_d.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/generated/schur_eliminator_d_d_d.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_d_d_d.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/generated/schur_eliminator_d_d_d.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/parallel_for_cxx.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/parallel_for_cxx.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/parallel_for_cxx.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/thread_pool.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/thread_pool.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/thread_pool.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/accelerate_sparse.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/accelerate_sparse.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/accelerate_sparse.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/array_utils.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/array_utils.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/array_utils.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/block_evaluate_preparer.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_evaluate_preparer.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_evaluate_preparer.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/block_jacobi_preconditioner.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_jacobi_preconditioner.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_jacobi_preconditioner.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/block_jacobian_writer.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_jacobian_writer.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_jacobian_writer.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/block_random_access_dense_matrix.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_random_access_dense_matrix.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_random_access_dense_matrix.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/block_random_access_diagonal_matrix.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_random_access_diagonal_matrix.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_random_access_diagonal_matrix.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/block_random_access_matrix.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_random_access_matrix.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_random_access_matrix.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/block_random_access_sparse_matrix.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_random_access_sparse_matrix.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_random_access_sparse_matrix.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/block_sparse_matrix.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_sparse_matrix.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_sparse_matrix.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/block_structure.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_structure.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/block_structure.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/callbacks.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/callbacks.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/callbacks.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/canonical_views_clustering.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/canonical_views_clustering.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/canonical_views_clustering.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/cgnr_solver.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/cgnr_solver.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/cgnr_solver.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/compressed_col_sparse_matrix_utils.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/compressed_col_sparse_matrix_utils.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/compressed_col_sparse_matrix_utils.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/compressed_row_jacobian_writer.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/compressed_row_jacobian_writer.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/compressed_row_jacobian_writer.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/compressed_row_sparse_matrix.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/compressed_row_sparse_matrix.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/compressed_row_sparse_matrix.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/conditioned_cost_function.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/conditioned_cost_function.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/conditioned_cost_function.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/conjugate_gradients_solver.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/conjugate_gradients_solver.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/conjugate_gradients_solver.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/context.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/context.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/context.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/context_impl.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/context_impl.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/context_impl.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/coordinate_descent_minimizer.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/coordinate_descent_minimizer.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/coordinate_descent_minimizer.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/corrector.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/corrector.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/corrector.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/cost_function.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/cost_function.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/cost_function.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/covariance.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/covariance.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/covariance.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/covariance_impl.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/covariance_impl.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/covariance_impl.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/cxsparse.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/cxsparse.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/cxsparse.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/dense_cholesky.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dense_cholesky.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dense_cholesky.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/dense_normal_cholesky_solver.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dense_normal_cholesky_solver.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dense_normal_cholesky_solver.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/dense_qr.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dense_qr.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dense_qr.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/dense_qr_solver.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dense_qr_solver.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dense_qr_solver.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/dense_sparse_matrix.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dense_sparse_matrix.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dense_sparse_matrix.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/detect_structure.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/detect_structure.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/detect_structure.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/dogleg_strategy.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dogleg_strategy.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dogleg_strategy.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/dynamic_compressed_row_jacobian_writer.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dynamic_compressed_row_jacobian_writer.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dynamic_compressed_row_jacobian_writer.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/dynamic_compressed_row_sparse_matrix.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dynamic_compressed_row_sparse_matrix.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dynamic_compressed_row_sparse_matrix.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/dynamic_sparse_normal_cholesky_solver.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dynamic_sparse_normal_cholesky_solver.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/dynamic_sparse_normal_cholesky_solver.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/eigensparse.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/eigensparse.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/eigensparse.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/evaluation_callback.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/evaluation_callback.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/evaluation_callback.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/evaluator.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/evaluator.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/evaluator.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/file.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/file.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/file.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/first_order_function.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/first_order_function.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/first_order_function.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/float_cxsparse.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/float_cxsparse.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/float_cxsparse.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/float_suitesparse.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/float_suitesparse.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/float_suitesparse.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/function_sample.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/function_sample.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/function_sample.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/gradient_checking_cost_function.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/gradient_checking_cost_function.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/gradient_checking_cost_function.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/gradient_problem_solver.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/gradient_problem_solver.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/gradient_problem_solver.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/implicit_schur_complement.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/implicit_schur_complement.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/implicit_schur_complement.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/inner_product_computer.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/inner_product_computer.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/inner_product_computer.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/is_close.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/is_close.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/is_close.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/iteration_callback.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/iteration_callback.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/iteration_callback.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/iterative_refiner.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/iterative_refiner.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/iterative_refiner.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/iterative_schur_complement_solver.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/iterative_schur_complement_solver.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/iterative_schur_complement_solver.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/levenberg_marquardt_strategy.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/levenberg_marquardt_strategy.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/levenberg_marquardt_strategy.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/line_search.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/line_search.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/line_search.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/line_search_direction.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/line_search_direction.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/line_search_direction.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/line_search_minimizer.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/line_search_minimizer.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/line_search_minimizer.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/line_search_preprocessor.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/line_search_preprocessor.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/line_search_preprocessor.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/linear_least_squares_problems.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/linear_least_squares_problems.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/linear_least_squares_problems.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/linear_operator.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/linear_operator.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/linear_operator.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/linear_solver.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/linear_solver.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/linear_solver.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/low_rank_inverse_hessian.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/low_rank_inverse_hessian.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/low_rank_inverse_hessian.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/minimizer.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/minimizer.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/minimizer.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/parallel_utils.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/parallel_utils.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/parallel_utils.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/parameter_block_ordering.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/parameter_block_ordering.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/parameter_block_ordering.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/partitioned_matrix_view.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/partitioned_matrix_view.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/partitioned_matrix_view.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/polynomial.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/polynomial.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/polynomial.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/preconditioner.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/preconditioner.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/preconditioner.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/preprocessor.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/preprocessor.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/preprocessor.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/problem_impl.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/problem_impl.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/problem_impl.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/program.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/program.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/program.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/reorder_program.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/reorder_program.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/reorder_program.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/residual_block.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/residual_block.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/residual_block.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/residual_block_utils.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/residual_block_utils.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/residual_block_utils.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/schur_complement_solver.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/schur_complement_solver.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/schur_complement_solver.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/schur_eliminator.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/schur_eliminator.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/schur_eliminator.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/schur_jacobi_preconditioner.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/schur_jacobi_preconditioner.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/schur_jacobi_preconditioner.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/schur_templates.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/schur_templates.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/schur_templates.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/scratch_evaluate_preparer.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/scratch_evaluate_preparer.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/scratch_evaluate_preparer.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/single_linkage_clustering.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/single_linkage_clustering.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/single_linkage_clustering.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/solver_utils.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/solver_utils.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/solver_utils.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/sparse_cholesky.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/sparse_cholesky.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/sparse_cholesky.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/sparse_matrix.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/sparse_matrix.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/sparse_matrix.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/sparse_normal_cholesky_solver.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/sparse_normal_cholesky_solver.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/sparse_normal_cholesky_solver.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/stringprintf.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/stringprintf.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/stringprintf.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/subset_preconditioner.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/subset_preconditioner.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/subset_preconditioner.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/suitesparse.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/suitesparse.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/suitesparse.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/thread_token_provider.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/thread_token_provider.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/thread_token_provider.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/triplet_sparse_matrix.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/triplet_sparse_matrix.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/triplet_sparse_matrix.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/trust_region_minimizer.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/trust_region_minimizer.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/trust_region_minimizer.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/trust_region_preprocessor.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/trust_region_preprocessor.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/trust_region_preprocessor.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/trust_region_step_evaluator.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/trust_region_step_evaluator.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/trust_region_step_evaluator.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/trust_region_strategy.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/trust_region_strategy.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/trust_region_strategy.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/visibility.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/visibility.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/visibility.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/visibility_based_preconditioner.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/visibility_based_preconditioner.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/visibility_based_preconditioner.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/_deps/ceres-build/internal/ceres",
+  "command": "/usr/bin/c++  -DCERES_CXSPARSE_VERSION=\\\"3.2.0\\\" -DCERES_SUITESPARSE_VERSION=\\\"5.7.1\\\" -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -Dceres_EXPORTS -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-src/internal -I/home/user/catkin_ws/build/_deps/ceres-build/include -I/usr/include/suitesparse -I/home/user/catkin_ws/build/_deps/eigen-src    -Wmissing-declarations -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -Wno-deprecated-declarations -std=gnu++17 -o CMakeFiles/ceres_internal.dir/wall_time.cc.o -c /home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/wall_time.cc",
+  "file": "/home/user/catkin_ws/build/_deps/ceres-src/internal/ceres/wall_time.cc"
+},
+{
+  "directory": "/home/user/catkin_ws/build/SG-SLAM/ros/semgraph_slam/core",
+  "command": "/usr/bin/c++  -DROS_BUILD_SHARED_LIBS=1 -I/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/core -I/home/user/catkin_ws/src/SG-SLAM/cpp -I/home/user/catkin_ws/build/_deps/tessil-src/include -isystem /home/user/catkin_ws/build/_deps/eigen-src  -O3 -DNDEBUG -fPIC   -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wno-deprecated-declarations -Wdisabled-optimization -Woverloaded-virtual -Wno-unused-parameter -Wno-unused-but-set-variable -std=gnu++17 -o CMakeFiles/core.dir/CommonUtils.cpp.o -c /home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/core/CommonUtils.cpp",
+  "file": "/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/core/CommonUtils.cpp"
+},
+{
+  "directory": "/home/user/catkin_ws/build/SG-SLAM/ros/semgraph_slam/frontend",
+  "command": "/usr/bin/c++  -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend -I/home/user/catkin_ws/src/SG-SLAM/cpp -I/home/user/catkin_ws/build/_deps/tessil-src/include -I/home/user/catkin_ws/build/_deps/sophus-src -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /home/user/catkin_ws/build/_deps/eigen-src  -O3 -DNDEBUG -fPIC   -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wno-deprecated-declarations -Wdisabled-optimization -Woverloaded-virtual -Wno-unused-parameter -Wno-unused-but-set-variable -std=gnu++17 -o CMakeFiles/frontend.dir/Registration.cpp.o -c /home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend/Registration.cpp",
+  "file": "/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend/Registration.cpp"
+},
+{
+  "directory": "/home/user/catkin_ws/build/SG-SLAM/ros/semgraph_slam/frontend",
+  "command": "/usr/bin/c++  -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend -I/home/user/catkin_ws/src/SG-SLAM/cpp -I/home/user/catkin_ws/build/_deps/tessil-src/include -I/home/user/catkin_ws/build/_deps/sophus-src -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /home/user/catkin_ws/build/_deps/eigen-src  -O3 -DNDEBUG -fPIC   -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wno-deprecated-declarations -Wdisabled-optimization -Woverloaded-virtual -Wno-unused-parameter -Wno-unused-but-set-variable -std=gnu++17 -o CMakeFiles/frontend.dir/Deskew.cpp.o -c /home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend/Deskew.cpp",
+  "file": "/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend/Deskew.cpp"
+},
+{
+  "directory": "/home/user/catkin_ws/build/SG-SLAM/ros/semgraph_slam/frontend",
+  "command": "/usr/bin/c++  -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend -I/home/user/catkin_ws/src/SG-SLAM/cpp -I/home/user/catkin_ws/build/_deps/tessil-src/include -I/home/user/catkin_ws/build/_deps/sophus-src -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /home/user/catkin_ws/build/_deps/eigen-src  -O3 -DNDEBUG -fPIC   -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wno-deprecated-declarations -Wdisabled-optimization -Woverloaded-virtual -Wno-unused-parameter -Wno-unused-but-set-variable -std=gnu++17 -o CMakeFiles/frontend.dir/VoxelHashMap.cpp.o -c /home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend/VoxelHashMap.cpp",
+  "file": "/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend/VoxelHashMap.cpp"
+},
+{
+  "directory": "/home/user/catkin_ws/build/SG-SLAM/ros/semgraph_slam/frontend",
+  "command": "/usr/bin/c++  -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend -I/home/user/catkin_ws/src/SG-SLAM/cpp -I/home/user/catkin_ws/build/_deps/tessil-src/include -I/home/user/catkin_ws/build/_deps/sophus-src -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /home/user/catkin_ws/build/_deps/eigen-src  -O3 -DNDEBUG -fPIC   -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wno-deprecated-declarations -Wdisabled-optimization -Woverloaded-virtual -Wno-unused-parameter -Wno-unused-but-set-variable -std=gnu++17 -o CMakeFiles/frontend.dir/Preprocessing.cpp.o -c /home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend/Preprocessing.cpp",
+  "file": "/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend/Preprocessing.cpp"
+},
+{
+  "directory": "/home/user/catkin_ws/build/SG-SLAM/ros/semgraph_slam/frontend",
+  "command": "/usr/bin/c++  -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend -I/home/user/catkin_ws/src/SG-SLAM/cpp -I/home/user/catkin_ws/build/_deps/tessil-src/include -I/home/user/catkin_ws/build/_deps/sophus-src -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /home/user/catkin_ws/build/_deps/eigen-src  -O3 -DNDEBUG -fPIC   -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wno-deprecated-declarations -Wdisabled-optimization -Woverloaded-virtual -Wno-unused-parameter -Wno-unused-but-set-variable -std=gnu++17 -o CMakeFiles/frontend.dir/Threshold.cpp.o -c /home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend/Threshold.cpp",
+  "file": "/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend/Threshold.cpp"
+},
+{
+  "directory": "/home/user/catkin_ws/build/SG-SLAM/ros/semgraph_slam/frontend",
+  "command": "/usr/bin/c++  -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend -I/home/user/catkin_ws/src/SG-SLAM/cpp -I/home/user/catkin_ws/build/_deps/tessil-src/include -I/home/user/catkin_ws/build/_deps/sophus-src -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /home/user/catkin_ws/build/_deps/eigen-src  -O3 -DNDEBUG -fPIC   -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wno-deprecated-declarations -Wdisabled-optimization -Woverloaded-virtual -Wno-unused-parameter -Wno-unused-but-set-variable -std=gnu++17 -o CMakeFiles/frontend.dir/SemanticCluster.cpp.o -c /home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend/SemanticCluster.cpp",
+  "file": "/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend/SemanticCluster.cpp"
+},
+{
+  "directory": "/home/user/catkin_ws/build/SG-SLAM/ros/semgraph_slam/frontend",
+  "command": "/usr/bin/c++  -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend -I/home/user/catkin_ws/src/SG-SLAM/cpp -I/home/user/catkin_ws/build/_deps/tessil-src/include -I/home/user/catkin_ws/build/_deps/sophus-src -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /home/user/catkin_ws/build/_deps/eigen-src  -O3 -DNDEBUG -fPIC   -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wno-deprecated-declarations -Wdisabled-optimization -Woverloaded-virtual -Wno-unused-parameter -Wno-unused-but-set-variable -std=gnu++17 -o CMakeFiles/frontend.dir/SemGraph.cpp.o -c /home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend/SemGraph.cpp",
+  "file": "/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend/SemGraph.cpp"
+},
+{
+  "directory": "/home/user/catkin_ws/build/SG-SLAM/ros/semgraph_slam/frontend",
+  "command": "/usr/bin/c++  -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend -I/home/user/catkin_ws/src/SG-SLAM/cpp -I/home/user/catkin_ws/build/_deps/tessil-src/include -I/home/user/catkin_ws/build/_deps/sophus-src -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /home/user/catkin_ws/build/_deps/eigen-src  -O3 -DNDEBUG -fPIC   -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wno-deprecated-declarations -Wdisabled-optimization -Woverloaded-virtual -Wno-unused-parameter -Wno-unused-but-set-variable -std=gnu++17 -o CMakeFiles/frontend.dir/GraphMap.cpp.o -c /home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend/GraphMap.cpp",
+  "file": "/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/frontend/GraphMap.cpp"
+},
+{
+  "directory": "/home/user/catkin_ws/build/SG-SLAM/ros/semgraph_slam/loopclosure",
+  "command": "/usr/bin/c++  -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/loopclosure -I/home/user/catkin_ws/src/SG-SLAM/cpp -I/home/user/catkin_ws/build/_deps/tessil-src/include -I/home/user/catkin_ws/build/_deps/sophus-src -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /home/user/catkin_ws/build/_deps/eigen-src  -O3 -DNDEBUG -fPIC   -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wno-deprecated-declarations -Wdisabled-optimization -Woverloaded-virtual -Wno-unused-parameter -Wno-unused-but-set-variable -std=gnu++17 -o CMakeFiles/loopclosure.dir/LoopClosure.cpp.o -c /home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/loopclosure/LoopClosure.cpp",
+  "file": "/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/loopclosure/LoopClosure.cpp"
+},
+{
+  "directory": "/home/user/catkin_ws/build/SG-SLAM/ros/semgraph_slam/loopclosure",
+  "command": "/usr/bin/c++  -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/loopclosure -I/home/user/catkin_ws/src/SG-SLAM/cpp -I/home/user/catkin_ws/build/_deps/tessil-src/include -I/home/user/catkin_ws/build/_deps/sophus-src -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /home/user/catkin_ws/build/_deps/eigen-src  -O3 -DNDEBUG -fPIC   -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wno-deprecated-declarations -Wdisabled-optimization -Woverloaded-virtual -Wno-unused-parameter -Wno-unused-but-set-variable -std=gnu++17 -o CMakeFiles/loopclosure.dir/Hungarian.cpp.o -c /home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/loopclosure/Hungarian.cpp",
+  "file": "/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/loopclosure/Hungarian.cpp"
+},
+{
+  "directory": "/home/user/catkin_ws/build/SG-SLAM/ros/semgraph_slam/loopclosure",
+  "command": "/usr/bin/c++  -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/loopclosure -I/home/user/catkin_ws/src/SG-SLAM/cpp -I/home/user/catkin_ws/build/_deps/tessil-src/include -I/home/user/catkin_ws/build/_deps/sophus-src -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /home/user/catkin_ws/build/_deps/eigen-src  -O3 -DNDEBUG -fPIC   -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wno-deprecated-declarations -Wdisabled-optimization -Woverloaded-virtual -Wno-unused-parameter -Wno-unused-but-set-variable -std=gnu++17 -o CMakeFiles/loopclosure.dir/FastIcp.cpp.o -c /home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/loopclosure/FastIcp.cpp",
+  "file": "/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/loopclosure/FastIcp.cpp"
+},
+{
+  "directory": "/home/user/catkin_ws/build/SG-SLAM/ros/semgraph_slam/loopclosure",
+  "command": "/usr/bin/c++  -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/loopclosure -I/home/user/catkin_ws/src/SG-SLAM/cpp -I/home/user/catkin_ws/build/_deps/tessil-src/include -I/home/user/catkin_ws/build/_deps/sophus-src -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /home/user/catkin_ws/build/_deps/eigen-src  -O3 -DNDEBUG -fPIC   -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wno-deprecated-declarations -Wdisabled-optimization -Woverloaded-virtual -Wno-unused-parameter -Wno-unused-but-set-variable -std=gnu++17 -o CMakeFiles/loopclosure.dir/PlaneIcp.cpp.o -c /home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/loopclosure/PlaneIcp.cpp",
+  "file": "/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/loopclosure/PlaneIcp.cpp"
+},
+{
+  "directory": "/home/user/catkin_ws/build/SG-SLAM/ros/semgraph_slam/pipeline",
+  "command": "/usr/bin/c++  -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/pipeline -I/home/user/catkin_ws/src/SG-SLAM/cpp -I/home/user/catkin_ws/build/_deps/tessil-src/include -I/home/user/catkin_ws/build/_deps/sophus-src -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /home/user/catkin_ws/build/_deps/eigen-src  -O3 -DNDEBUG -fPIC   -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wno-deprecated-declarations -Wdisabled-optimization -Woverloaded-virtual -Wno-unused-parameter -Wno-unused-but-set-variable -std=gnu++17 -o CMakeFiles/pipeline.dir/SemGraphSLAM.cpp.o -c /home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/pipeline/SemGraphSLAM.cpp",
+  "file": "/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/pipeline/SemGraphSLAM.cpp"
+},
+{
+  "directory": "/home/user/catkin_ws/build/SG-SLAM/ros/semgraph_slam/pipeline",
+  "command": "/usr/bin/c++  -DGFLAGS_IS_A_DLL=0 -DROS_BUILD_SHARED_LIBS=1 -DSOPHUS_USE_BASIC_LOGGING=1 -I/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/pipeline -I/home/user/catkin_ws/src/SG-SLAM/cpp -I/home/user/catkin_ws/build/_deps/tessil-src/include -I/home/user/catkin_ws/build/_deps/sophus-src -I/home/user/catkin_ws/build/_deps/ceres-src/include -I/home/user/catkin_ws/build/_deps/ceres-build/include -isystem /home/user/catkin_ws/build/_deps/eigen-src  -O3 -DNDEBUG -fPIC   -fdiagnostics-color=always -Werror -Wall -Wextra -pedantic -Wcast-align -Wcast-qual -Wno-deprecated-declarations -Wdisabled-optimization -Woverloaded-virtual -Wno-unused-parameter -Wno-unused-but-set-variable -std=gnu++17 -o CMakeFiles/pipeline.dir/SemGraphMapping.cpp.o -c /home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/pipeline/SemGraphMapping.cpp",
+  "file": "/home/user/catkin_ws/src/SG-SLAM/cpp/semgraph_slam/pipeline/SemGraphMapping.cpp"
+}
+]

@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/user/catkin_ws/devel/lib/libpipeline.a  CMakeFiles/pipeline.dir/SemGraphSLAM.cpp.o CMakeFiles/pipeline.dir/SemGraphMapping.cpp.o
+/usr/bin/ranlib /home/user/catkin_ws/devel/lib/libpipeline.a

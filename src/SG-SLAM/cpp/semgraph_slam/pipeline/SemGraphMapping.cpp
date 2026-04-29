@@ -11,7 +11,7 @@ void SemGraphMapping::mainProcess(int cloud_id, const Graph &frame_graph){
 
 
     loop_flag = false; //flag for loop detection
-    int num_exclude_curr = 150/config_.keyframe_interval; //the number of keyframes to be excluded from current frame
+    int num_exclude_curr = 30/config_.keyframe_interval; //the number of keyframes to be excluded from current frame
 
     time_gen_des = 0;
     time_search = 0;
@@ -115,22 +115,30 @@ bool SemGraphMapping::SearchLoop(int num_exclude_curr, std::vector<int>& match_i
     bool search_results = false;
     Eigen::Matrix4d loop_trans = Eigen::Matrix4d::Identity();
     std::pair<int,int>loop_pair;
+    num_new_loops = 0;
 
-    // Loop closure verification
+    // Loop closure verification — accept ALL valid candidates
     for(int m = 0; m < config_.search_results_num; m++){
             if(out_dists_sqr[m]>config_.max_distance_for_loop) continue;
             int candi_idx_inkey = candidate_indexes[m]; // idx in keyfraem
             int candi_idx = keyframe_idx_vec_[candi_idx_inkey]; // idx in all frame
             
-            search_results = GeometryVeriPoseEstimation(graph_curre,keyframe_graph_vec_[candi_idx_inkey],loop_trans,match_instance_idx,
+            std::vector<int> match_inst_tmp;
+            Eigen::Matrix4d loop_trans_tmp = Eigen::Matrix4d::Identity();
+            bool valid = GeometryVeriPoseEstimation(graph_curre,keyframe_graph_vec_[candi_idx_inkey],loop_trans_tmp,match_inst_tmp,
                                                             config_.graph_sim_th, config_.back_sim_th, config_.map_voxel_size_loop);
-            if(search_results){
+            if(valid){
                 loop_pair.first = idx_curre;
                 loop_pair.second = candi_idx;
                 loop_pair_vec.emplace_back(loop_pair);
-                loop_trans_vec.emplace_back(loop_trans);
-                loop_frame_key_idx_vec.emplace_back(candi_idx_inkey); //for visualization
-                break;
+                loop_trans_vec.emplace_back(loop_trans_tmp);
+                loop_frame_key_idx_vec.emplace_back(candi_idx_inkey);
+                if (!search_results) {
+                    match_instance_idx = match_inst_tmp;
+                    loop_trans = loop_trans_tmp;
+                }
+                search_results = true;
+                num_new_loops++;
             }
     }
     return search_results;

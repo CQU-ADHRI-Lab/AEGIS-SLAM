@@ -66,7 +66,7 @@ bool GeometryVeriPoseEstimation(const Graph &graph_q, const Graph &graph_t, Eige
         if(score<graph_sim_th || score_ssc<back_sim_th || distance>15) return false;
         
         // loop transformation refinement
-        FastIcp instanceIcp(map_voxel_size_loop,5); 
+        FastIcp instanceIcp(map_voxel_size_loop, 5); 
         auto trans_icp = instanceIcp.get_trans(graph_q.front_points,graph_t.front_points,trans.matrix());
 
         PlaneIcp backgroundPlaceIcp(map_voxel_size_loop); 

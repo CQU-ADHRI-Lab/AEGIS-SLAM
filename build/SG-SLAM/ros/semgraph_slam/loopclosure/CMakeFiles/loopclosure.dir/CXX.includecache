@@ -2456,9 +2456,7 @@ cfloat
 math_constants.h
 -
 Eigen/src/Core/arch/HIP/hcc/math_constants.h
-_deps/eigen-src/Eigen/src/Core/util/Eigen/src/Core/arch/HIP/hcc/math_constants.h
-cstdint
--
+_deps/eigen-src/Eigen/src/Core/util/Eigen/src
 
 _deps/eigen-src/Eigen/src/Core/util/ReenableStupidWarnings.h
 

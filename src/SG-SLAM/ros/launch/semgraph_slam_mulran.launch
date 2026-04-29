@@ -22,10 +22,10 @@
     <!-- ROS params -->
     <param name="odom_frame" value="$(arg odom_frame)"/>
     <param name="child_frame" value="$(arg child_frame)"/>
-    <param name="result_path" value="$(find semgraph_slam)/save/mulran_odometry_00.txt"/>
-    <param name="pgo_result_path" value="$(find semgraph_slam)/save/mulran_slam_poses_00.txt"/>
-    <param name="lidar_path" value="/data/00/Ouster/"/>
-    <param name="label_path" value="/data/00/segnet4d/"/>
+    <param name="result_path" value="$(find semgraph_slam)/save/mulran_odometry_02.txt"/>
+    <param name="pgo_result_path" value="$(find semgraph_slam)/save/mulran_slam_poses_02.txt"/>
+    <param name="lidar_path" value="/data/02/Ouster/"/>
+    <param name="label_path" value="/data/02/segnet4d/"/>
     <!-- <param name="label_path" value="/home/wangneng/DataFast/SegNet4D_predictions/kitti/sequences/00/predictions/"/> -->
 
     <!-- KISS-ICP params -->
@@ -35,8 +35,8 @@
     <param name="relocalization_enable" value="$(arg relocalization_enable)"/> 
     <param name="voxel_size" value="$(arg voxel_size)"/>
     <param name="max_points_per_voxel" value="20"/>
-    <param name="initial_threshold" value="2.0"/>
-    <param name="min_motion_th" value="0.1" />
+    <param name="initial_threshold" value="1.0"/>
+    <param name="min_motion_th" value="0.4" />
 
     <!-- cluster params -->
     <param name="deltaA" value="2" />
@@ -53,7 +53,7 @@
     <param name="max_local_graph_map_range" value="60.0" />
 
     <!-- arbitration params (tuned for Ouster OS1-64 / MulRan) -->
-    <param name="arbitration_enable" value="true" />
+    <param name="arbitration_enable" value="false" />
     <param name="arbitration_warmup_iterations" value="3" />
     <param name="arbitration_alpha" value="0.4" />
     <param name="arbitration_dynamic_alpha" value="0.2" />
@@ -81,13 +81,19 @@
 
     <!-- loop closing params -->
     <param name="global_des_dim" value="231" />
-    <param name="loop_candidate" value="5" />
-    <param name="keyframe_interval" value="5" />
+    <param name="loop_candidate" value="15" />
+    <param name="keyframe_interval" value="3" />
     <param name="max_distance_for_loop" value="0.18" />
     <param name="graph_sim_th" value="0.5" />
     <param name="back_sim_th" value="0.3" />
-    <param name="map_voxel_size_loop" value="1.0" />
-    <param name="frame_acc_pgo" value="20" />
+    <param name="map_voxel_size_loop" value="0.5" />
+    <param name="frame_acc_pgo" value="10" />
+
+    <!-- PGO noise model params -->
+    <param name="pgo_odom_noise_rot" type="double" value="0.000001" />
+    <param name="pgo_odom_noise_trans" type="double" value="0.0001" />
+    <param name="pgo_loop_noise_score" type="double" value="0.1" />
+    <param name="loop_rot_reject_deg" type="double" value="180.0" />
     <param name="loop_closure_enable" value="$(arg loop_closure_enable)" />
 
   </node>

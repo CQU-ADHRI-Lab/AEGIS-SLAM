@@ -68,7 +68,7 @@ python traj_eval.py --gt_file /home/zjc/dataset/kitti/sequences/08/08.txt --pred
 
 python traj_eval.py --gt_file /home/zhoujiacong/catkin_ws/01/01.txt --pred_file /home/zhoujiacong/catkin_ws/src/SG-SLAM/ros/save/kitti_slam_01.txt --calib_file /home/zhoujiacong/catkin_ws/01/calib.txt
 
-python traj_eval.py --gt_file /data/00/kaist01.txt --pred_file /home/user/catkin_ws/src/SG-SLAM/ros/save/mulran_slam_poses_00.txt 
+python traj_eval.py --gt_file /data/08/riverside03.txt --pred_file /home/user/catkin_ws/src/SG-SLAM/ros/save/mulran_slam_poses_08.txt 
 
 sudo apt-get install ros-noetic-tf-transformations
 

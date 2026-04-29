@@ -51,6 +51,7 @@ public:
     void UpdateMapping(const std::vector<Sophus::SE3d> &pose, int recent_update_idx);
 
     bool loop_flag = false;
+    int num_new_loops = 0;
     std::vector<bool> is_keyframe_vec;      // the vector to indicate whether the frame is a keyframe
     
     std::vector<V4d> new_instance_frame_vec;            // the vector to store the new instance in each frame, for global graph construction

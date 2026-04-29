@@ -125,7 +125,9 @@ class Mapping{
         gtsam::ISAM2 *isam;
         gtsam::Values resultsIsam;
         gtsam::noiseModel::Diagonal::shared_ptr odometryNoise;  
-        gtsam::noiseModel::Base::shared_ptr robustLoopNoise; 
+        gtsam::noiseModel::Base::shared_ptr robustLoopNoise;
+
+        double loop_rot_reject_deg_{20.0};
         
         // Data publishers
         ros::Publisher traj_pgo_publisher_;

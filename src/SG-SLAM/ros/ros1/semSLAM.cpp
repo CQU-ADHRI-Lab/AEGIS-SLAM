@@ -349,6 +349,16 @@ Mapping::Mapping(const ros::NodeHandle &nh, const ros::NodeHandle &pnh)
     pnh_.param("frame_acc_pgo", config_.frame_acc_pgo, config_.frame_acc_pgo);     // the frame accuracy for performing pgo
     pnh_.param("loop_closure_enable", config_.loop_closure_enable, config_.loop_closure_enable);  // enable loop closure detection
 
+    double pgo_odom_noise_rot = 1e-6;
+    double pgo_odom_noise_trans = 1e-4;
+    double pgo_loop_noise_score = 0.1;
+    pnh_.param("pgo_odom_noise_rot", pgo_odom_noise_rot, pgo_odom_noise_rot);
+    pnh_.param("pgo_odom_noise_trans", pgo_odom_noise_trans, pgo_odom_noise_trans);
+    pnh_.param("pgo_loop_noise_score", pgo_loop_noise_score, pgo_loop_noise_score);
+    pnh_.param("loop_rot_reject_deg", loop_rot_reject_deg_, loop_rot_reject_deg_);
+
+    config_.search_results_num = config_.loop_candidate;
+
     // Construct the main mapping node
     semGraphMappinger = graph_slam::SemGraphMapping(config_);
 
@@ -360,15 +370,15 @@ Mapping::Mapping(const ros::NodeHandle &nh, const ros::NodeHandle &pnh)
     global_graph_edge_publisher_ = pnh_.advertise<visualization_msgs::Marker>("graph_edges", queue_size_);
     loop_pc_publisher_ = pnh_.advertise<sensor_msgs::PointCloud2>("loop_pc", queue_size_);
 
-    // Resulut file
+    // Result file
     fout_pgo_result_.open(pgo_result_path_,std::ofstream::trunc);
-    fout_pgo_result_.close(); // clear the file
+    fout_pgo_result_.close();
 
     fout_global_graph_map_.open(graph_map_path_,std::ofstream::trunc);
-    fout_global_graph_map_.close(); // clear the file
+    fout_global_graph_map_.close();
 
     fout_global_graph_edge_.open(graph_edge_path_,std::ofstream::trunc);
-    fout_global_graph_edge_.close(); // clear the file
+    fout_global_graph_edge_.close();
 
     // Construct gtsam graph (PGO)
     gtsam::ISAM2Params parameters;
@@ -377,16 +387,20 @@ Mapping::Mapping(const ros::NodeHandle &nh, const ros::NodeHandle &pnh)
     isam = new gtsam::ISAM2(parameters);
 
     gtsam::Vector Vector6(6);
-    Vector6 << 1e-6, 1e-6, 1e-6, 1e-4, 1e-4, 1e-4;
+    Vector6 << pgo_odom_noise_rot, pgo_odom_noise_rot, pgo_odom_noise_rot,
+               pgo_odom_noise_trans, pgo_odom_noise_trans, pgo_odom_noise_trans;
     odometryNoise = gtsam::noiseModel::Diagonal::Variances(Vector6);
     
-    double loopNoiseScore = 0.1;
     gtsam::Vector robustNoiseVector6(6);
-    robustNoiseVector6 << loopNoiseScore, loopNoiseScore, loopNoiseScore,
-                        loopNoiseScore, loopNoiseScore, loopNoiseScore;
+    robustNoiseVector6 << pgo_loop_noise_score, pgo_loop_noise_score, pgo_loop_noise_score,
+                          pgo_loop_noise_score, pgo_loop_noise_score, pgo_loop_noise_score;
     robustLoopNoise = gtsam::noiseModel::Robust::Create(
         gtsam::noiseModel::mEstimator::Cauchy::Create(1),
         gtsam::noiseModel::Diagonal::Variances(robustNoiseVector6));
+
+    std::cout << "[PGO] odom_noise_rot=" << pgo_odom_noise_rot
+              << " odom_noise_trans=" << pgo_odom_noise_trans
+              << " loop_noise=" << pgo_loop_noise_score << std::endl;
 
 }
 
@@ -440,18 +454,33 @@ void Mapping::ScanMapping(){
 
                 // True loop closure
                 if(semGraphMappinger.loop_flag){
-                    const auto &loop_pair = semGraphMappinger.loop_pair_vec.back();  // the loop pair (current keyframe, loop keyframe)
-                    auto &loop_trans = semGraphMappinger.loop_trans_vec.back();      // the corresponding loop transformation
-                    std::cout <<WHITE<< "[  Mapping ]: <Loop Detection> between:" << loop_pair.first<< " ------ " <<loop_pair.second << \
+                    int n_new = semGraphMappinger.num_new_loops;
+                    int base_idx = static_cast<int>(semGraphMappinger.loop_pair_vec.size()) - n_new;
+                    int loops_added = 0;
+                    for (int li = 0; li < n_new; ++li) {
+                        int idx = base_idx + li;
+                        const auto &loop_pair = semGraphMappinger.loop_pair_vec[idx];
+                        const auto &loop_trans = semGraphMappinger.loop_trans_vec[idx];
+
+                        Eigen::Matrix3d loop_R = loop_trans.block<3,3>(0,0);
+                        double trace_R = loop_R.trace();
+                        double cos_angle = std::clamp((trace_R - 1.0) / 2.0, -1.0, 1.0);
+                        double loop_rot_deg = std::acos(cos_angle) * 180.0 / M_PI;
+
+                        if (loop_rot_deg > loop_rot_reject_deg_) {
+                            continue;
+                        }
+                        gtsam::Point3 ttem(loop_trans.block<3,1>(0,3));
+                        gtsam::Rot3 Rtem(loop_trans.block<3,3>(0,0));
+                        gtSAMgraph.add(gtsam::BetweenFactor<gtsam::Pose3>(loop_pair.second, loop_pair.first, gtsam::Pose3(Rtem, ttem), robustLoopNoise));
+                        loops_added++;
+                    }
+                    const auto &loop_pair = semGraphMappinger.loop_pair_vec.back();
+                    const auto &loop_trans = semGraphMappinger.loop_trans_vec.back();
+                    std::cout <<WHITE<< "[  Mapping ]: <Loop Detection> " << loops_added << "/" << n_new << " loops between:" << loop_pair.first<< " ------ " <<loop_pair.second << \
                                         ", Time [gen des]:"<<semGraphMappinger.time_gen_des<<"ms, [loop search]:"<<semGraphMappinger.time_search<<"ms"<<std::endl;
-                    std::cout <<WHITE<< "[  Mapping ]: <Loop transform>: " << loop_trans << std::endl;
 
-                    // Add loop factor
-                    gtsam::Point3 ttem(loop_trans.block<3,1>(0,3));
-                    gtsam::Rot3 Rtem(loop_trans.block<3,3>(0,0));
-                    gtSAMgraph.add(gtsam::BetweenFactor<gtsam::Pose3>(loop_pair.second, loop_pair.first, gtsam::Pose3(Rtem, ttem), robustLoopNoise));
-
-                    // Add loop closure point cloud visualization
+                    // Visualization for the last loop closure
                     std::vector<Eigen::Vector4d> loop_frame_pc;
                     auto loop_frame_pose = poses_pgo_vec_[loop_pair.second];
                     int loop_key_frame_idx = semGraphMappinger.loop_frame_key_idx_vec.back();
@@ -461,7 +490,6 @@ void Mapping::ScanMapping(){
                         frame_points_front[i].head<3>() =  loop_frame_pose*loop_frame_graph.front_points.first[i];
                         frame_points_front[i](3) = loop_frame_graph.front_points.second[i];
                     });
-
                     loop_frame_pc.insert(loop_frame_pc.end(),frame_points_front.begin(),frame_points_front.end());
                     std::vector<Eigen::Vector4d> frame_points_bk(loop_frame_graph.back_points.first.size());
                     tbb::parallel_for(size_t(0),frame_points_bk.size(), [&](size_t i){
@@ -469,8 +497,6 @@ void Mapping::ScanMapping(){
                         frame_points_bk[i](3) = loop_frame_graph.back_points.second[i];
                     });
                     loop_frame_pc.insert(loop_frame_pc.end(),frame_points_bk.begin(),frame_points_bk.end());
-                    
-                    // Publish loop point cloud
                     std_msgs::Header loop_frame_header;
                     loop_frame_header.frame_id = odom_frame_;
                     loop_frame_header.stamp = ros::Time::now();

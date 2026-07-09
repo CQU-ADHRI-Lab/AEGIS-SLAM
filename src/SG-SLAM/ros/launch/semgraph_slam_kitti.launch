@@ -68,6 +68,8 @@
     <param name="arbitration_debug_print_anchor_points" value="true" />
     <param name="arbitration_debug_max_anchor_points" value="200" />
 
+    <param name="persistent_node_augment_enable" value="true" />
+
     <!-- relozalization params -->
     <param name="model_deviation_trans" value="0.12" />
     <param name="model_deviation_rot" value="0.01" />

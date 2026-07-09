@@ -26,8 +26,10 @@ void SemGraphMapping::mainProcess(int cloud_id, const Graph &frame_graph){
         keyframe_idx_vec_.emplace_back(cloud_id);
         auto start_time_gen = std::chrono::steady_clock::now();
 
-        // Generating scan descriptor
-        const auto scan_descriptor = GenScanDescriptors(frame_graph,config_.edge_dis_th,config_.subinterval);
+        // 使用预计算的融合描述子（若可用），否则从当前帧图生成
+        const auto scan_descriptor = frame_graph.precomputed_descriptor.empty()
+            ? GenScanDescriptors(frame_graph, config_.edge_dis_th, config_.subinterval)
+            : frame_graph.precomputed_descriptor;
         scan_des_vec_.emplace_back(scan_descriptor);
 
         auto end_time_gen = std::chrono::steady_clock::now();

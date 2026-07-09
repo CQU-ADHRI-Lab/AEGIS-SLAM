@@ -2,6 +2,7 @@
 // contact: Neng Wang, <neng.wang@hotmail.com>
 
 #include <algorithm>
+#include <unordered_set>
 #include <tbb/parallel_for.h>
 
 #include "SemGraphSLAM.hpp"
@@ -150,9 +151,20 @@ SemGraphSLAM::V3d_i_pair_graph SemGraphSLAM::mainProcess(const V3d &frame, const
     // Update local graph map
     local_graph_map_.Update(graph, frame2map_match, new_pose);
 
+    // 持久节点增强：补充因误标签丢失的节点
+    Graph graph_for_backend = graph;
+    if (config_.persistent_node_augment_enable && !local_graph_map_.instance_in_localmap.empty()) {
+        graph_for_backend = AugmentGraphWithPersistentNodes(graph, frame2map_match, new_pose);
+    }
+
+    // 描述子融合：将帧描述子与局部图描述子按匹配率加权融合
+    if (config_.descriptor_fusion_enable && !local_graph_map_.instance_in_localmap.empty()) {
+        FuseDescriptorWithLocalMap(graph_for_backend, frame2map_match, new_pose);
+    }
+
     // Push new pose to global poses
     poses_.push_back(new_pose);
-    return {frame_downsample_cluster, source, graph};
+    return {frame_downsample_cluster, source, graph_for_backend};
 }
 
 // Voxel downsample the semantic frame
@@ -178,6 +190,169 @@ V4d  SemGraphSLAM::FusePointsAndLabels(const V3d_i &frame){
     return points;
 }
 
+
+Graph SemGraphSLAM::AugmentGraphWithPersistentNodes(
+    const Graph &frame_graph,
+    const VTbii &frame2map_match,
+    const Sophus::SE3d &pose) {
+
+    const int total_frame_nodes = static_cast<int>(frame_graph.node_labels.size());
+    if (total_frame_nodes == 0) return frame_graph;
+
+    // 统计当前帧节点的匹配率
+    int matched_frame_nodes = 0;
+    std::unordered_set<int> matched_localmap_ids;
+    for (const auto &[flag, id_frame, id_local] : frame2map_match) {
+        if (flag) {
+            matched_frame_nodes++;
+            if (id_local >= 0) matched_localmap_ids.insert(id_local);
+        }
+    }
+
+    double match_rate = static_cast<double>(matched_frame_nodes) / total_frame_nodes;
+
+    // 自适应判断：匹配率高说明当前帧与局部图一致（标签基本正确），无需增强
+    if (match_rate > config_.persistent_node_augment_match_rate_th) {
+        return frame_graph;
+    }
+
+    // 当前帧节点的世界坐标位置和标签
+    struct FrameNodeInfo {
+        Eigen::Vector3d world_pos;
+        int label;
+    };
+    std::vector<FrameNodeInfo> frame_nodes_world;
+    for (size_t i = 0; i < frame_graph.node_labels.size(); i++) {
+        frame_nodes_world.push_back({
+            pose * frame_graph.node_centers[i],
+            frame_graph.node_labels[i]
+        });
+    }
+
+    // 当前帧的节点作为基础（转到世界坐标）
+    std::vector<InsNode> combined_nodes;
+    for (size_t i = 0; i < frame_graph.node_labels.size(); i++) {
+        InsNode node;
+        node.pose = frame_nodes_world[i].world_pos;
+        node.label = frame_graph.node_labels[i];
+        node.dimension = frame_graph.node_dimensions[i];
+        node.points_num = frame_graph.points_num[i];
+        node.id = static_cast<int>(i);
+        combined_nodes.push_back(node);
+    }
+
+    const auto &persistent_nodes = local_graph_map_.instance_in_localmap;
+    const Eigen::Vector3d origin = pose.translation();
+    const double near_range = config_.persistent_node_augment_near_range;
+    const double cover_dist_th = config_.persistent_node_augment_cover_dist;
+    const int max_augmented = config_.persistent_node_augment_max_nodes;
+    const int min_points = config_.persistent_node_augment_min_points;
+    int augmented_count = 0;
+
+    for (size_t i = 0; i < persistent_nodes.size() && augmented_count < max_augmented; i++) {
+        if (matched_localmap_ids.count(static_cast<int>(i))) continue;
+
+        const auto &pnode = persistent_nodes[i];
+        if (pnode.points_num < min_points) continue;
+
+        double dist = (pnode.pose - origin).norm();
+        if (dist > near_range) continue;
+
+        bool covered = false;
+        for (const auto &fn : frame_nodes_world) {
+            if (fn.label == pnode.label &&
+                (fn.world_pos - pnode.pose).norm() < cover_dist_th) {
+                covered = true;
+                break;
+            }
+        }
+        if (covered) continue;
+
+        combined_nodes.push_back(pnode);
+        augmented_count++;
+    }
+
+    if (augmented_count == 0) return frame_graph;
+
+    Graph augmented = ReBuildGraph(combined_nodes,
+                                  config_.edge_dis_th,
+                                  config_.subinterval,
+                                  config_.graph_node_dimension,
+                                  config_.subgraph_edge_th);
+
+    Sophus::SE3d pose_inv = pose.inverse();
+    for (auto &center : augmented.node_centers) {
+        center = pose_inv * center;
+    }
+
+    augmented.back_points = frame_graph.back_points;
+    augmented.front_points = frame_graph.front_points;
+    augmented.new_instance = frame_graph.new_instance;
+
+    return augmented;
+}
+
+void SemGraphSLAM::FuseDescriptorWithLocalMap(
+    Graph &graph_for_backend,
+    const VTbii &frame2map_match,
+    const Sophus::SE3d &pose) {
+
+    const auto &persistent_nodes = local_graph_map_.instance_in_localmap;
+    const Eigen::Vector3d origin = pose.translation();
+    const double range = config_.descriptor_fusion_local_map_range;
+
+    // 收集距离范围内的局部图持久节点
+    std::vector<InsNode> local_nodes;
+    for (const auto &pn : persistent_nodes) {
+        if ((pn.pose - origin).norm() <= range) {
+            local_nodes.push_back(pn);
+        }
+    }
+
+    if (static_cast<int>(local_nodes.size()) < config_.descriptor_fusion_min_local_nodes) {
+        return;
+    }
+
+    // 用局部图节点重建图结构
+    Graph local_map_graph = ReBuildGraph(local_nodes,
+                                         config_.edge_dis_th,
+                                         config_.subinterval,
+                                         config_.graph_node_dimension,
+                                         config_.subgraph_edge_th);
+    // 背景 SSC 部分来自当前帧（背景点受误标签影响较小）
+    local_map_graph.back_points = graph_for_backend.back_points;
+
+    // 生成两个描述子
+    auto frame_desc = GenScanDescriptors(graph_for_backend, config_.edge_dis_th, config_.subinterval);
+    auto local_desc = GenScanDescriptors(local_map_graph, config_.edge_dis_th, config_.subinterval);
+
+    if (frame_desc.size() != local_desc.size() || frame_desc.empty()) {
+        return;
+    }
+
+    // 计算匹配率作为融合权重
+    const int total = static_cast<int>(graph_for_backend.node_labels.size());
+    int matched = 0;
+    for (const auto &[flag, id_f, id_l] : frame2map_match) {
+        if (flag) matched++;
+    }
+    // alpha 高 → 信任帧描述子；alpha 低 → 信任局部图描述子
+    double alpha = (total > 0) ? static_cast<double>(matched) / total : 1.0;
+    alpha = std::max(0.2, std::min(1.0, alpha));
+
+    // 加权融合并重新 L2 归一化
+    std::vector<float> fused(frame_desc.size());
+    for (size_t i = 0; i < fused.size(); i++) {
+        fused[i] = static_cast<float>(alpha) * frame_desc[i]
+                 + static_cast<float>(1.0 - alpha) * local_desc[i];
+    }
+    float norm_sq = std::inner_product(fused.begin(), fused.end(), fused.begin(), 0.0f);
+    float norm = std::sqrt(norm_sq);
+    if (norm < 1e-6f) norm = 1e-6f;
+    for (auto &v : fused) v /= norm;
+
+    graph_for_backend.precomputed_descriptor = std::move(fused);
+}
 
 double SemGraphSLAM::GetAdaptiveThreshold() {
     if (!HasMoved()) {

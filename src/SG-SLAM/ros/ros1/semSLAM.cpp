@@ -108,6 +108,35 @@ Odometry::Odometry(const ros::NodeHandle &nh, const ros::NodeHandle &pnh)
                config_.arbitration_debug_max_anchor_points,
                config_.arbitration_debug_max_anchor_points);
 
+    pnh_.param("persistent_node_augment_enable",
+               config_.persistent_node_augment_enable,
+               config_.persistent_node_augment_enable);
+    pnh_.param("persistent_node_augment_near_range",
+               config_.persistent_node_augment_near_range,
+               config_.persistent_node_augment_near_range);
+    pnh_.param("persistent_node_augment_max_nodes",
+               config_.persistent_node_augment_max_nodes,
+               config_.persistent_node_augment_max_nodes);
+    pnh_.param("persistent_node_augment_cover_dist",
+               config_.persistent_node_augment_cover_dist,
+               config_.persistent_node_augment_cover_dist);
+    pnh_.param("persistent_node_augment_min_points",
+               config_.persistent_node_augment_min_points,
+               config_.persistent_node_augment_min_points);
+    pnh_.param("persistent_node_augment_match_rate_th",
+               config_.persistent_node_augment_match_rate_th,
+               config_.persistent_node_augment_match_rate_th);
+
+    pnh_.param("descriptor_fusion_enable",
+               config_.descriptor_fusion_enable,
+               config_.descriptor_fusion_enable);
+    pnh_.param("descriptor_fusion_local_map_range",
+               config_.descriptor_fusion_local_map_range,
+               config_.descriptor_fusion_local_map_range);
+    pnh_.param("descriptor_fusion_min_local_nodes",
+               config_.descriptor_fusion_min_local_nodes,
+               config_.descriptor_fusion_min_local_nodes);
+
     pnh_.param("lidar_path", lidar_path_, lidar_path_);  // path to the point cloud data,
     pnh_.param("label_path", label_path_, label_path_);  // path to the label data,
     if (config_.max_range < config_.min_range) {

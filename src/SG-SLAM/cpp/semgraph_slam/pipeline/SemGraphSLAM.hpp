@@ -87,6 +87,18 @@ struct SemGraphSLAMConfig {
     bool arbitration_debug_print_anchor_points = true;
     int arbitration_debug_max_anchor_points = 200;
 
+    // 持久节点增强：用局部图中经多帧验证的持久节点补充当前帧图
+    bool persistent_node_augment_enable = true;
+    double persistent_node_augment_near_range = 30.0;
+    int persistent_node_augment_max_nodes = 5;
+    double persistent_node_augment_cover_dist = 3.0;
+    int persistent_node_augment_min_points = 20;
+    double persistent_node_augment_match_rate_th = 0.6;
+
+    // 描述子融合：将当前帧描述子与局部图描述子按匹配率自适应融合
+    bool descriptor_fusion_enable = true;
+    double descriptor_fusion_local_map_range = 40.0;
+    int descriptor_fusion_min_local_nodes = 3;
 };
 
 class SemGraphSLAM {
@@ -119,6 +131,12 @@ public:
 
     V4d FusePointsAndLabels(const V3d_i &frame);
     Sophus::SE3d GetPredictionModel() const;
+    Graph AugmentGraphWithPersistentNodes(const Graph &frame_graph,
+                                          const VTbii &frame2map_match,
+                                          const Sophus::SE3d &pose);
+    void FuseDescriptorWithLocalMap(Graph &graph_for_backend,
+                                    const VTbii &frame2map_match,
+                                    const Sophus::SE3d &pose);
     std::pair<V3d, V3d> relocalization_corr;  // for visualization
     Sophus::SE3d initial_guess_for_relocalization;  // for visualization
 

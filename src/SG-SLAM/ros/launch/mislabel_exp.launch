@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="dataset" default="kitti"/>
+  <arg name="visualize" default="false"/>
+  <arg name="lidar_path" />
+  <arg name="label_path" />
+  <arg name="result_path" />
+  <arg name="pgo_result_path" />
+  <arg name="graph_map_path" default=""/>
+  <arg name="graph_edge_path" default=""/>
+  <arg name="loop_closure_enable" default="true"/>
+
+  <arg name="arbitration_enable" default="true"/>
+  <arg name="arbitration_alpha" default="0.5"/>
+  <arg name="graph_node_verification_enable" default="true"/>
+  <arg name="graph_node_min_observation" default="2"/>
+  <arg name="persistent_node_augment_enable" default="true"/>
+  <arg name="augment_near_range" default="30.0"/>
+  <arg name="augment_max_nodes" default="5"/>
+  <arg name="augment_cover_dist" default="3.0"/>
+  <arg name="augment_min_points" default="20"/>
+  <arg name="augment_match_rate_th" default="0.6"/>
+
+  <arg name="descriptor_fusion_enable" default="true"/>
+  <arg name="descriptor_fusion_local_map_range" default="40.0"/>
+  <arg name="descriptor_fusion_min_local_nodes" default="3"/>
+
+  <arg name="max_range" default="100.0"/>
+  <arg name="min_range" default="5.0"/>
+  <arg name="voxel_size" default="1.0"/>
+  <arg name="initial_threshold" default="2.0"/>
+  <arg name="min_motion_th" default="0.1"/>
+  <arg name="deskew" default="true"/>
+  <arg name="relocalization_enable" default="true"/>
+  <arg name="max_local_graph_map_range" default="100.0"/>
+
+  <arg name="loop_candidate" default="5"/>
+  <arg name="keyframe_interval" default="5"/>
+  <arg name="max_distance_for_loop" default="0.1"/>
+  <arg name="back_sim_th" default="0.58"/>
+  <arg name="map_voxel_size_loop" default="1.0"/>
+  <arg name="frame_acc_pgo" default="20"/>
+  <arg name="pgo_odom_noise_rot" default="0.0001"/>
+  <arg name="pgo_odom_noise_trans" default="0.01"/>
+  <arg name="pgo_loop_noise_score" default="0.5"/>
+  <arg name="loop_rot_reject_deg" default="15.0"/>
+
+  <node pkg="semgraph_slam" type="semSLAM" name="semSLAM" output="screen" required="true">
+    <param name="dataset" value="$(arg dataset)"/>
+    <param name="odom_frame" value="odom"/>
+    <param name="child_frame" value="base_link"/>
+    <param name="lidar_path" value="$(arg lidar_path)"/>
+    <param name="label_path" value="$(arg label_path)"/>
+    <param name="result_path" value="$(arg result_path)"/>
+    <param name="pgo_result_path" value="$(arg pgo_result_path)"/>
+    <param name="graph_map_path" value="$(arg graph_map_path)"/>
+    <param name="graph_edge_path" value="$(arg graph_edge_path)"/>
+
+    <param name="max_range" value="$(arg max_range)"/>
+    <param name="min_range" value="$(arg min_range)"/>
+    <param name="deskew" value="$(arg deskew)"/>
+    <param name="relocalization_enable" value="$(arg relocalization_enable)"/>
+    <param name="voxel_size" value="$(arg voxel_size)"/>
+    <param name="max_points_per_voxel" value="20"/>
+    <param name="initial_threshold" value="$(arg initial_threshold)"/>
+    <param name="min_motion_th" value="$(arg min_motion_th)"/>
+
+    <param name="deltaA" value="2"/>
+    <param name="deltaR" value="0.5"/>
+    <param name="deltaP" value="2"/>
+    <param name="edge_dis_th" value="60"/>
+    <param name="subgraph_edge_th" value="20"/>
+    <param name="subinterval" value="30"/>
+    <param name="graph_node_dimension" value="30"/>
+    <param name="nearest_neighbor_vehicle_disth" value="2.0"/>
+    <param name="nearest_neighbor_pole_disth" value="2.0"/>
+    <param name="max_local_graph_map_range" value="$(arg max_local_graph_map_range)"/>
+
+    <param name="graph_node_min_observation" value="$(arg graph_node_min_observation)"/>
+    <param name="graph_node_verification_enable" value="$(arg graph_node_verification_enable)"/>
+
+    <param name="arbitration_enable" value="$(arg arbitration_enable)"/>
+    <param name="arbitration_alpha" value="$(arg arbitration_alpha)"/>
+    <param name="arbitration_geo_sigma" value="0.5"/>
+    <param name="arbitration_anchor_voxel_size" value="0.6"/>
+    <param name="arbitration_anchor_k" value="4"/>
+    <param name="arbitration_min_correspondence_count" value="300"/>
+    <param name="arbitration_dynamic_geo_reject_threshold" value="0.25"/>
+    <param name="arbitration_dynamic_residual_reject_threshold" value="0.8"/>
+    <param name="arbitration_dynamic_hard_reject" value="true"/>
+    <param name="arbitration_debug_print_every_n" value="500"/>
+    <param name="arbitration_debug_print_weight_changed_points" value="false"/>
+    <param name="arbitration_debug_print_anchor_points" value="false"/>
+
+    <param name="persistent_node_augment_enable" value="$(arg persistent_node_augment_enable)"/>
+    <param name="persistent_node_augment_near_range" value="$(arg augment_near_range)"/>
+    <param name="persistent_node_augment_max_nodes" value="$(arg augment_max_nodes)"/>
+    <param name="persistent_node_augment_cover_dist" value="$(arg augment_cover_dist)"/>
+    <param name="persistent_node_augment_min_points" value="$(arg augment_min_points)"/>
+    <param name="persistent_node_augment_match_rate_th" value="$(arg augment_match_rate_th)"/>
+
+    <param name="descriptor_fusion_enable" value="$(arg descriptor_fusion_enable)"/>
+    <param name="descriptor_fusion_local_map_range" value="$(arg descriptor_fusion_local_map_range)"/>
+    <param name="descriptor_fusion_min_local_nodes" value="$(arg descriptor_fusion_min_local_nodes)"/>
+
+    <param name="model_deviation_trans" value="0.12"/>
+    <param name="model_deviation_rot" value="0.01"/>
+    <param name="inlier_rate_th" value="0.43"/>
+
+    <param name="global_des_dim" value="231"/>
+    <param name="loop_candidate" value="$(arg loop_candidate)"/>
+    <param name="keyframe_interval" value="$(arg keyframe_interval)"/>
+    <param name="max_distance_for_loop" value="$(arg max_distance_for_loop)"/>
+    <param name="graph_sim_th" value="0.5"/>
+    <param name="back_sim_th" value="$(arg back_sim_th)"/>
+    <param name="map_voxel_size_loop" value="$(arg map_voxel_size_loop)"/>
+    <param name="frame_acc_pgo" value="$(arg frame_acc_pgo)"/>
+    <param name="loop_closure_enable" value="$(arg loop_closure_enable)"/>
+
+    <param name="pgo_odom_noise_rot" value="$(arg pgo_odom_noise_rot)"/>
+    <param name="pgo_odom_noise_trans" value="$(arg pgo_odom_noise_trans)"/>
+    <param name="pgo_loop_noise_score" value="$(arg pgo_loop_noise_score)"/>
+    <param name="loop_rot_reject_deg" value="$(arg loop_rot_reject_deg)"/>
+  </node>
+</launch>

@@ -75,6 +75,9 @@ struct Graph
     int vehicle_num=0;
     int trunk_num=0;
     int pole_like_num=0;
+
+    // 预计算的融合描述子（若非空则优先使用，跳过 GenScanDescriptors）
+    std::vector<float> precomputed_descriptor;
 };
 
 // Data structure for instance node in local map
